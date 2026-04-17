@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css">
+    <title>お問い合わせ</title>
+</head>
+
+<body>
+
+<header>
+    
+     <div>
+      <img src="images/logo.png" alt="ロゴ" id="image-1" width="300" height="auto">
+    </div>
+
+    <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="https://www.e-corporation.co.jp/">メディアについて</a></li>
+                <li><a href="https://www.e-corporation.co.jp/">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+<main>
+    <h1>お問い合わせフォーム</h1>
+
+    <p>以下のフォームに必要事項をご入力いただき、ページ下部の「送信」ボタンからお問い合わせ内容を送信してください。</p>
+
+<table border="1">
+<form action="">
+    <tr>
+        <th class="koumoku" ><label id="k1" for="">メールアドレス</label></th>
+        <td class="nyuryoku"><input type="email" placeholder="例）holiday_vibess@google.com" required></td>
+    </tr>
+    <tr>
+        <th class="koumoku"><label id="k2" for="">氏名</label></th>
+        <td class="nyuryoku"><input type="text" placeholder="例）山田　太郎" required> </td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k3" for="">フリガナ</label></th>
+        <td class="nyuryoku"><input type="text" placeholder="例）ヤマダ　タロウ" required></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label id="k8" for="">電話番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560" required></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label for="">携帯電話番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560"></td>
+    </tr>
+        <th class="koumoku"><label for="">FAX番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5640-6021"></td>
+    <tr>
+        <th class="koumoku"><label for="">お問い合わせ分類</label></th>
+        <td class="nyuryoku">
+            <input type="radio" name="gender"><label>製品について</label>
+            <input type="radio" name="gender"><label>カタログ請求について</label>
+            <input type="radio" name="gender"><label>その他</label>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <th class="koumoku"><label for="">お問い合わせ内容</label></th>
+        <td class="nyuryoku"><textarea name="" id="" placeholder="お問い合わせ内容を入力"></textarea></td>
+    </tr>
+</form>
+</table> 
+    
+
+<div class="personal">
+    <h3>個人情報の取り扱いについて</h3>
+    <p id="information">ご入力いただいたお客様情報は、当社の<a href="https://www.e-corporation.co.jp/private/" target="_blank">プライバシーポリシー</a>に基づき取り扱います。<br>
+    内容をご確認のうえ、同意する場合は□にチェックを入れてください。<br>
+    ※チェックを入れない場合、お客様情報は送信されません。</p>
+
+    <form action="">
+    <input type="checkbox" required>
+    <label for="">同意する</label>
+    </form>
+</div>
+
+<h4>ご入力いただいた情報に間違いがないかご確認の上、「送信」ボタンを押してください。</h4>
+
+<div class="button">
+        <input type="submit" value="送信">
+        <input type="reset" value="やり直す">
+</div>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>↓↓↓カタログ請求はこちらから↓↓↓</p>
+    <a href="kataroguform.html" target="_blank">
+      <img src="images/banner.png" alt="カタログ請求" width="680px" height="250px">
+    </a>
+    <p>&copy;2026 HOLIDAYVIBESS</p>
+  </footer>
+  </body>
+</html>

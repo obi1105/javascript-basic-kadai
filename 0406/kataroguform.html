@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/from.css">
+    <title>カタログ請求フォーム</title>
+</head>
+
+<body>
+
+<header>
+    
+     <div>
+      <img src="images/logo.png" alt="ロゴ" id="image-1" width="300" height="auto">
+    </div>
+
+    <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="https://www.e-corporation.co.jp/">メディアについて</a></li>
+                <li><a href="kataroguform.html">カタログ請求</a></li>
+                <li><a href="question.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+<main>
+    <h1>HOLIDAY VIBESSカタログ請求フォーム</h1>
+
+    <p class="start">以下のフォームに必要事項をご入力いただき、ページ下部の「カタログを請求する」ボタンからお申し込みを完了してください。</p>
+
+    <input type="button" id="getItems" value="入力内容を取得">
+
+    <div id="errorMessage"></div>
+
+
+<form name="form1">
+<table border="1">
+    <tr>
+        <th class="koumoku" ><label id="k1" for="">メールアドレス</label></th>
+        <td class="nyuryoku"><input type="email" placeholder="例）holiday_vibess@google.com" required name="email"></td>
+    </tr>
+    <tr>
+        <th class="koumoku"><label id="k2" for="">氏名</label></th>
+        <td class="nyuryoku"><input type="text" placeholder="例）山田　太郎" required name="kanji"> </td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k3" for="">フリガナ</label></th>
+        <td class="nyuryoku"><input type="text" placeholder="例）ヤマダ　タロウ" required name="furigana"></td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k4" for="">郵便番号</label></th>
+        <td class="nyuryoku" id="zip"><input type="text" placeholder="例）103" required name="zip1">
+            -
+            <input type="text" placeholder="例）0011" required name="zip2">
+        </td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label id="k5" for="">都道府県</label></th>
+        <td class="nyuryoku">
+            <select name="address1" id="" required>
+                <option value="select">選択してください</option>
+                <option value="Hokkaido">北海道</option>
+                <option value="Aomori">青森県</option>
+                <option value="Iwate">岩手県</option>
+                <option value="Miyagi">宮城県</option>
+                <option value="Akita">秋田県</option>
+                <option value="Yamagata">山形県</option>
+                <option value="Fukushima">福島県</option>
+
+                <option value="Ibaraki">茨城県</option>
+                <option value="Tochigi">栃木県</option>
+                <option value="Gunma">群馬県</option>
+                <option value="Saitama">埼玉県</option>
+                <option value="Chiba">千葉県</option>
+                <option value="Tokyo">東京都</option>
+                <option value="Kanagawa">神奈川県</option>
+
+                <option value="Niigata">新潟県</option>
+                <option value="Toyama">富山県</option>
+                <option value="Ishikawa">石川県</option>
+                <option value="Fukui">福井県</option>
+                <option value="Yamanashi">山梨県</option>
+                <option value="Nagano">長野県</option>
+
+                <option value="Gifu">岐阜県</option>
+                <option value="Shizuoka">静岡県</option>
+                <option value="Aichi">愛知県</option>
+                <option value="Mie">三重県</option>
+
+                <option value="Shiga">滋賀県</option>
+                <option value="Kyoto">京都府</option>
+                <option value="Osaka">大阪府</option>
+                <option value="Hyogo">兵庫県</option>
+                <option value="Nara">奈良県</option>
+                <option value="Wakayama">和歌山県</option>
+
+                <option value="Tottori">鳥取県</option>
+                <option value="Shimane">島根県</option>
+                <option value="Okayama">岡山県</option>
+                <option value="Hiroshima">広島県</option>
+                <option value="Yamaguchi">山口県</option>
+
+                <option value="Tokushima">徳島県</option>
+                <option value="Kagawa">香川県</option>
+                <option value="Ehime">愛媛県</option>
+                <option value="Kochi">高知県</option>
+
+                <option value="Fukuoka">福岡県</option>
+                <option value="Saga">佐賀県</option>
+                <option value="Nagasaki">長崎県</option>
+                <option value="Kumamoto">熊本県</option>
+                <option value="Oita">大分県</option>
+                <option value="Miyazaki">宮崎県</option>
+                <option value="Kagoshima">鹿児島県</option>
+
+                <option value="Okinawa">沖縄県</option>
+            </select>
+        </td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k6" for="">市区町村</label></th>
+        <td class="nyuryoku"><textarea class="textarea" placeholder="例）中央区日本橋大伝馬町" required name="address2"></textarea></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label id="k7" for=""><br>丁目・番地/ <br>建物名・号室</label></th>
+        <td class="nyuryoku"><textarea class="textarea" placeholder="例）12-1　ホワイトビル4階" required name="address3"></textarea></td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k8" for="">電話番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560" required name="phone1"></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label for="">携帯電話番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560" name="phone2"></td>
+    </tr>
+        <th class="koumoku"><label for="">FAX番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5640-6021" name="phone3"></td>
+    <tr>
+        
+    </tr>
+</table>
+</form>
+
+
+<div class="personal">
+    <h3>個人情報の取り扱いについて</h3>
+    <p id="information">ご入力いただいたお客様情報は、当社の<a href="https://www.e-corporation.co.jp/private/" target="_blank">プライバシーポリシー</a>に基づき取り扱います。<br>
+    内容をご確認のうえ、同意する場合は□にチェックを入れてください。<br>
+    ※チェックを入れない場合、お客様情報は送信されません。</p>
+
+    <form action="">
+    <input type="checkbox" required id="checkbox">
+    <label for="">同意する</label>
+    </form>
+</div>
+
+<p class="start">ご入力いただいた情報に間違いがないかご確認の上、「カタログを請求する」ボタンを押してください。</p>
+
+<div class="button">
+        <input type="submit" value="カタログを請求" id="submitBtn">
+        <input type="reset" value="やり直す">
+</div>
+
+</main>
+<a id="back-btn" href="#">TOPに戻る</a>
+
+
+<script src="assets/js/buckbtn.js"></script>
+<script src="assets/js/dom.js"></script>
+</body>
+
+<hr>
+
+<footer>
+    <p>↓↓↓カタログ請求はこちらから↓↓↓</p>
+    <a href="kataroguform.html" target="_blank">
+      <img src="images/banner.png" alt="カタログ請求" width="680px" height="250px">
+    </a>
+    <p>&copy;2026 HOLIDAYVIBESS</p>
+  </footer>
+</html>
