@@ -11,7 +11,7 @@
 
 <header>
     
-     <div>
+    <div>
       <img src="images/logo.png" alt="ロゴ" id="image-1" width="300" height="auto">
     </div>
 
@@ -29,9 +29,7 @@
 <main>
     <h1>HOLIDAY VIBESSカタログ請求フォーム</h1>
 
-    <p class="start">以下のフォームに必要事項をご入力いただき、ページ下部の「カタログを請求する」ボタンからお申し込みを完了してください。</p>
-
-    <input type="button" id="getItems" value="入力内容を取得">
+    <p class="start">以下のフォームに必要事項をご入力いただき、ページ下部の「確認画面へ」ボタンを押してください。</p>
 
     <div id="errorMessage"></div>
 
@@ -40,7 +38,7 @@
 <table border="1">
     <tr>
         <th class="koumoku" ><label id="k1" for="">メールアドレス</label></th>
-        <td class="nyuryoku"><input type="email" placeholder="例）holiday_vibess@google.com" required name="email"></td>
+        <td class="nyuryoku"><input type="email" placeholder="例）holiday_vibess@google.com" required name="email" id="email"></td>
     </tr>
     <tr>
         <th class="koumoku"><label id="k2" for="">氏名</label></th>
@@ -136,7 +134,7 @@
     
     <tr>
         <th class="koumoku"><label id="k8" for="">電話番号</label></th>
-        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560" required name="phone1"></td>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560" required name="phone1" id="phone1"></td>
     </tr>
 
     <tr>
@@ -149,7 +147,7 @@
         
     </tr>
 </table>
-</form>
+
 
 
 <div class="personal">
@@ -158,19 +156,20 @@
     内容をご確認のうえ、同意する場合は□にチェックを入れてください。<br>
     ※チェックを入れない場合、お客様情報は送信されません。</p>
 
-    <form action="">
+    
     <input type="checkbox" required id="checkbox">
     <label for="">同意する</label>
-    </form>
+
 </div>
 
-<p class="start">ご入力いただいた情報に間違いがないかご確認の上、「カタログを請求する」ボタンを押してください。</p>
+<p class="start">ご入力いただいた情報に間違いがないかご確認の上、「確認画面へ」ボタンを押してください。</p>
 
-<div class="button">
-        <input type="submit" value="カタログを請求" id="submitBtn">
+
+    <div class="button">
+        <input type="button" value="確認画面へ" id="submitBtn">
         <input type="reset" value="やり直す">
-</div>
-
+    </div>
+</form>
 </main>
 <a id="back-btn" href="#">TOPに戻る</a>
 
